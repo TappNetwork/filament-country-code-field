@@ -1,0 +1,52 @@
+{
+    "name": "tapp/filament-country-code-field",
+    "description": "Filament country code field.",
+    "keywords": [
+        "tapp network",
+        "filament",
+        "laravel",
+        "country code"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tapp Network",
+            "email": "steve@tappnetwork.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Tapp Network",
+            "email": "andreia.bohner@tappnetwork.com",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/TappNetwork/filament-country-code-field",
+    "support": {
+        "issues": "https://github.com/TappNetwork/filament-country-code-field/issues",
+        "source": "https://github.com/TappNetwork/filament-country-code-field"
+    },
+    "require": {
+        "php": "^8.1",
+        "filament/filament": "^3.0-stable"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tapp\\FilamentCountryCodeField\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tapp\\FilamentCountryCodeField\\FilamentCountryCodeFieldServiceProvider"
+            ],
+            "aliases": {
+                "FilamentCountryCodeField": "Tapp\\FilamentCountryCodeField\\Facades\\FilamentCountryCodeField"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

@@ -27,7 +27,7 @@ class CountryCodeSelectFilter extends SelectFilter
 
         $this->getSearchResultsUsing(function (string $search): array {
             $countryCodes = collect($this->getCountriesData())->filter(function ($q) use ($search) {
-                return false !== stripos($q['label'], $search);
+                return stripos($q['label'], $search) !== false;
             })->pluck('label', 'country_code');
 
             $result = $countryCodes->mapWithKeys(function ($item, $key) {

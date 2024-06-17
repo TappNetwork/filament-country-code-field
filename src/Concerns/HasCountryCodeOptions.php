@@ -2,10 +2,6 @@
 
 namespace Tapp\FilamentCountryCodeField\Concerns;
 
-use Closure;
-use Filament\Support\Facades\FilamentIcon;
-use Illuminate\Support\HtmlString;
-
 trait HasCountryCodeOptions
 {
     public function getOptions(): array
@@ -23,8 +19,8 @@ trait HasCountryCodeOptions
             $countryCode = $country['country_code'] ?? null;
             $isoCode = $country['iso_code'] ?? null;
 
-            $data[$countryCode] =  method_exists($this, 'allowHtml') ? $this->getHtmlOption($country) : $country['label'].' '.$country['country_code'];
-        };
+            $data[$countryCode] = method_exists($this, 'allowHtml') ? $this->getHtmlOption($country) : $country['label'].' '.$country['country_code'];
+        }
 
         return $data;
     }

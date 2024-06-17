@@ -3,7 +3,6 @@
 namespace Tapp\FilamentCountryCodeField\Forms\Components;
 
 use Filament\Forms\Components\Select;
-use Illuminate\Contracts\View\View;
 use Tapp\FilamentCountryCodeField\Concerns\HasCountryCodeData;
 use Tapp\FilamentCountryCodeField\Concerns\HasCountryCodeOptions;
 use Tapp\FilamentCountryCodeField\Concerns\HasFlags;
@@ -26,7 +25,7 @@ class CountryCodeSelect extends Select
 
         $this->getSearchResultsUsing(function (string $search): array {
             $countryCodes = collect($this->getCountriesData())->filter(function ($q) use ($search) {
-                return false !== stripos($q['label'], $search);
+                return stripos($q['label'], $search) !== false;
             })->pluck('country_code')->toArray();
 
             $result = [];
@@ -41,11 +40,11 @@ class CountryCodeSelect extends Select
         // selected label
         $this->getOptionLabelUsing(function ($value): ?string {
             if ($value === '+1') {
-                return "United States and Canada +1";
+                return 'United States and Canada +1';
             }
 
             if ($value === '+7') {
-                return "Russia and Kazakhstan +7";
+                return 'Russia and Kazakhstan +7';
             }
 
             return $value;

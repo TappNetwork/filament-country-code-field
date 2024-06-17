@@ -4,9 +4,9 @@ namespace Tapp\FilamentCountryCodeField\Concerns;
 
 trait HasFlags
 {
-    protected bool | \Closure $flags = true;
+    protected bool|\Closure $flags = true;
 
-    public function flags(bool | \Closure $flags): static
+    public function flags(bool|\Closure $flags): static
     {
         $this->flags = $flags;
 

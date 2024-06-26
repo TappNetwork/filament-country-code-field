@@ -6,14 +6,12 @@ use Filament\Tables\Filters\SelectFilter;
 use Tapp\FilamentCountryCodeField\Concerns\HasCountryCodeData;
 use Tapp\FilamentCountryCodeField\Concerns\HasCountryCodeOptions;
 use Tapp\FilamentCountryCodeField\Concerns\HasFlags;
-use Tapp\FilamentCountryCodeField\Concerns\HasSearch;
 
 class CountryCodeSelectFilter extends SelectFilter
 {
     use HasCountryCodeData;
     use HasCountryCodeOptions;
     use HasFlags;
-    use HasSearch;
 
     protected function setUp(): void
     {

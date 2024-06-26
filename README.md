@@ -36,6 +36,8 @@ public static function form(Form $form): Form
 
 ![Filament Country Code Field](https://raw.githubusercontent.com/TappNetwork/filament-country-code-field/main/docs/country_code_select.png)
 
+![Filament Country Code Table Column and Filter](https://raw.githubusercontent.com/TappNetwork/filament-country-code-field/main/docs/country_code_column_and_filter.png)
+
 ### Table Column
 
 ```php

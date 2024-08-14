@@ -1,5 +1,5 @@
 <div class="flex fi-ta-text gap-x-2 gap-y-1 px-3 py-4">
-    @if($getFlags())
+    @if($getFlags() && $getState())
         <div class="">
             <x-filament::icon
                 alias="flags::{{ $getIsoCodeByCountryCode($getState())  }}"

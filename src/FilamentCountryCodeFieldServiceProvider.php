@@ -37,7 +37,7 @@ class FilamentCountryCodeFieldServiceProvider extends PackageServiceProvider
 
     public function packageBooted(): void
     {
-        $filesystem = new Filesystem();
+        $filesystem = new Filesystem;
         $files = $filesystem->allFiles(__DIR__.'/../resources/svg');
 
         collect($files)->each(function ($file) {

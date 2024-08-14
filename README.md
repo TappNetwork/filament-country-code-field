@@ -1,6 +1,7 @@
 # Filament Country Code Field
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/tapp/filament-country-code-field.svg?style=flat-square)](https://packagist.org/packages/tapp/filament-country-code-field)
+![GitHub Tests Action Status](https://github.com/TappNetwork/filament-country-code-field/actions/workflows/run-tests.yml/badge.svg)
 ![Code Style Action Status](https://github.com/TappNetwork/filament-country-code-field/actions/workflows/pint.yml/badge.svg)
 [![Total Downloads](https://img.shields.io/packagist/dt/tapp/filament-country-code-field.svg?style=flat-square)](https://packagist.org/packages/tapp/filament-country-code-field)
 

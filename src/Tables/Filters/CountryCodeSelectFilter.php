@@ -18,7 +18,7 @@ class CountryCodeSelectFilter extends SelectFilter
         parent::setUp();
 
         $this->native(false);
-        //$this->allowHtml();
+        // $this->allowHtml();
         $this->optionsLimit(config('filament-country-code-field.country-code-field.options-limit'));
 
         $this->searchable();

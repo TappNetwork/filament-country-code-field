@@ -2,6 +2,8 @@
 
 namespace Tapp\FilamentCountryCodeField\Concerns;
 
+use Illuminate\Support\Str;
+
 trait HasCountryCodeOptions
 {
     public function getOptions(): array
@@ -27,12 +29,12 @@ trait HasCountryCodeOptions
 
     public function getHtmlOption($country)
     {
-        $isoCode = $country['iso_code'] ?? null;
+        $isoCode = $country['iso_code'] ?? '';
 
         return view('filament-country-code-field::select-option')
             ->with('label', $country['label'])
             ->with('country_code', $country['country_code'])
-            ->with('iso_code', strtolower($isoCode))
+            ->with('iso_code', Str::lower($isoCode))
             ->with('hasFlags', $this->flags)
             ->with('selected', $this->getState())
             ->render();

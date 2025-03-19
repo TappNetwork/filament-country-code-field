@@ -16,8 +16,8 @@ class FilamentCountryCodeFieldServiceProvider extends PackageServiceProvider
         $package
             ->name('filament-country-code-field')
             ->hasConfigFile()
-            ->hasViews();
-        // ->hasTranslations();
+            ->hasViews()
+            ->hasTranslations();
 
         $this->callAfterResolving(Factory::class, function (Factory $factory, Container $container) {
             $config = $container->make('config')->get('filament-country-code-field', []);

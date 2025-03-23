@@ -2,6 +2,18 @@
 
 All notable changes to the "Filament Country Code Field" will be documented in this file.
 
+## v1.0.2 - 2025-03-23
+
+### What's Changed
+
+* Adding pt_BR language support by @arturafonsoaa in https://github.com/TappNetwork/filament-country-code-field/pull/11
+
+### New Contributors
+
+* @arturafonsoaa made their first contribution in https://github.com/TappNetwork/filament-country-code-field/pull/11
+
+**Full Changelog**: https://github.com/TappNetwork/filament-country-code-field/compare/v1.0.1...v1.0.2
+
 ## v1.0.1 - 2025-03-16
 
 ### What's Changed

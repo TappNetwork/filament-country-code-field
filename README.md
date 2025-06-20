@@ -7,10 +7,33 @@
 
 A country code select form field, table column, and table filter for Laravel Filament.
 
+## Version Compatibility
+
+ Filament | Filament Country Code Field
+:---------|:---------------------------
+ 3.x      | 1.x
+ 4.x      | 2.x
+
 ## Installation
 
+You can install the package via composer:
+
+### For Filament 3
+
 ```bash
-composer require tapp/filament-country-code-field
+composer require tapp/filament-country-code-field:"^1.0"
+```
+
+### For Filament 4
+
+```bash
+composer require tapp/filament-country-code-field:"^2.0"
+```
+
+You can publish the config file with:
+
+```bash
+php artisan vendor:publish --tag="filament-country-code-field-config"
 ```
 
 ## Usage
@@ -58,14 +81,14 @@ public static function table(Table $table): Table
 ### Table Filter
 
 ```php
-use Tapp\FilamentCountryCodeField\Tables\Filters\CountryCodeFilter;
+use Tapp\FilamentCountryCodeField\Tables\Filters\CountryCodeSelectFilter;
 
 public static function table(Table $table): Table
 {
     return $table
         //...
         ->filters([
-            CountryCodeFilter::make('country_code'),
+            CountryCodeSelectFilter::make('country_code'),
             // ...
         ])
 }

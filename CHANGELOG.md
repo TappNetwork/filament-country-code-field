@@ -2,6 +2,15 @@
 
 All notable changes to the "Filament Country Code Field" will be documented in this file.
 
+## v1.0.3 - 2025-06-20
+
+### What's Changed
+
+* Bump dependabot/fetch-metadata from 2.3.0 to 2.4.0 by @dependabot in https://github.com/TappNetwork/filament-country-code-field/pull/12
+* Update README Filament 4 by @andreia in https://github.com/TappNetwork/filament-country-code-field/pull/16
+
+**Full Changelog**: https://github.com/TappNetwork/filament-country-code-field/compare/v1.0.2...v1.0.3
+
 ## v1.0.2 - 2025-03-23
 
 ### What's Changed

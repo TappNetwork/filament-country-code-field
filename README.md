@@ -58,14 +58,14 @@ public static function table(Table $table): Table
 ### Table Filter
 
 ```php
-use Tapp\FilamentCountryCodeField\Tables\Filters\CountryCodeFilter;
+use Tapp\FilamentCountryCodeField\Tables\Filters\CountryCodeSelectFilter;
 
 public static function table(Table $table): Table
 {
     return $table
         //...
         ->filters([
-            CountryCodeFilter::make('country_code'),
+            CountryCodeSelectFilter::make('country_code'),
             // ...
         ])
 }

@@ -1,0 +1,11 @@
+{
+    "name": "filament-country-code-field",
+    "type": "module",
+    "scripts": {
+      "dev:styles": "npx @tailwindcss/cli -i ./resources/css/countrycode.css -o ./dist/countrycode.css --watch",
+      "build:styles": "npx @tailwindcss/cli -i ./resources/css/countrycode.css -o ./dist/countrycode.css --minify"
+    },
+    "dependencies": {
+      "@tailwindcss/cli": "^4.0.6"
+    }
+}

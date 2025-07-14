@@ -3,6 +3,8 @@
 namespace Tapp\FilamentCountryCodeField;
 
 use BladeUI\Icons\Factory;
+use Filament\Support\Assets\Css;
+use Filament\Support\Facades\FilamentAsset;
 use Filament\Support\Facades\FilamentIcon;
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Filesystem\Filesystem;
@@ -11,18 +13,20 @@ use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class FilamentCountryCodeFieldServiceProvider extends PackageServiceProvider
 {
+    public static $name = 'filament-country-code-field';
+
     public function configurePackage(Package $package): void
     {
         $package
-            ->name('filament-country-code-field')
+            ->name(static::$name)
             ->hasConfigFile()
             ->hasViews()
             ->hasTranslations();
 
         $this->callAfterResolving(Factory::class, function (Factory $factory, Container $container) {
-            $config = $container->make('config')->get('filament-country-code-field', []);
+            $config = $container->make('config')->get(static::$name, []);
 
-            /*$factory->add('filament-country-code-field', array_merge([
+            /*$factory->add(static::$name, array_merge([
                 'path' => __DIR__ . '/../resources/svg',
                 'prefix' => '',
             ],
@@ -49,5 +53,9 @@ class FilamentCountryCodeFieldServiceProvider extends PackageServiceProvider
         })->reject(function ($file) {
             return $file->getExtension() !== 'svg';
         });
+
+        FilamentAsset::register([
+            Css::make('countrycode', __DIR__ . './../dist/countrycode.css'),
+        ], 'tapp/'.static::$name);
     }
 }

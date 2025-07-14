@@ -55,7 +55,7 @@ class FilamentCountryCodeFieldServiceProvider extends PackageServiceProvider
         });
 
         FilamentAsset::register([
-            Css::make('countrycode', __DIR__ . './../dist/countrycode.css'),
+            Css::make('countrycode', __DIR__.'./../dist/countrycode.css'),
         ], 'tapp/'.static::$name);
     }
 }

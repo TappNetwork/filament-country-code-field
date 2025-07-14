@@ -2,6 +2,14 @@
 
 All notable changes to the "Filament Country Code Field" will be documented in this file.
 
+## v2.0.1 - 2025-07-14
+
+### What's Changed
+
+* Add styles by @andreia in https://github.com/TappNetwork/filament-country-code-field/pull/18
+
+**Full Changelog**: https://github.com/TappNetwork/filament-country-code-field/compare/v2.0.0...v2.0.1
+
 ## v2.0.0 - 2025-06-20
 
 ### What's Changed

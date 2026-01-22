@@ -2,6 +2,19 @@
 
 All notable changes to the "Filament Country Code Field" will be documented in this file.
 
+## v2.0.2 - 2026-01-22
+
+### What's Changed
+
+* Updates for new branch by @andreia in https://github.com/TappNetwork/filament-country-code-field/pull/27
+* Bump aglipanci/laravel-pint-action from 2.5 to 2.6 by @dependabot[bot] in https://github.com/TappNetwork/filament-country-code-field/pull/28
+* Add filament 5 support by @andreia in https://github.com/TappNetwork/filament-country-code-field/pull/34
+* Bump stefanzweifel/git-auto-commit-action from 5 to 7 by @dependabot[bot] in https://github.com/TappNetwork/filament-country-code-field/pull/31
+* Bump actions/checkout from 4 to 6 by @dependabot[bot] in https://github.com/TappNetwork/filament-country-code-field/pull/30
+* Bump dependabot/fetch-metadata from 2.4.0 to 2.5.0 by @dependabot[bot] in https://github.com/TappNetwork/filament-country-code-field/pull/29
+
+**Full Changelog**: https://github.com/TappNetwork/filament-country-code-field/compare/v2.0.1...v2.0.2
+
 ## v2.0.1 - 2025-07-14
 
 ### What's Changed

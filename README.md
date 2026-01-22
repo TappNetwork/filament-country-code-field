@@ -11,7 +11,7 @@ A country code select form field, table column, and table filter for Laravel Fil
 
 Filament | Filament Country Code Field | Documentation
 :--------|:----------------------------|:--------------
-4.x      | 2.x                         | [Check the docs](https://github.com/TappNetwork/filament-country-code-field/tree/2.x)
+4.x/5.x  | 2.x                         | [Check the docs](https://github.com/TappNetwork/filament-country-code-field/tree/2.x)
 3.x      | 1.x                         | Current
 
 ## Installation

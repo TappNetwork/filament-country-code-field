@@ -2,6 +2,23 @@
 
 All notable changes to the "Filament Country Code Field" will be documented in this file.
 
+## v2.1.0 - 2026-04-26
+
+### What's Changed
+
+* Bump tar from 7.4.3 to 7.5.7 by @dependabot[bot] in https://github.com/TappNetwork/filament-country-code-field/pull/35
+* Bump tar from 7.5.7 to 7.5.9 by @dependabot[bot] in https://github.com/TappNetwork/filament-country-code-field/pull/36
+* Bump tar from 7.5.9 to 7.5.10 by @dependabot[bot] in https://github.com/TappNetwork/filament-country-code-field/pull/38
+* Bump tar from 7.5.10 to 7.5.11 by @dependabot[bot] in https://github.com/TappNetwork/filament-country-code-field/pull/39
+* Bump picomatch from 2.3.1 to 2.3.2 by @dependabot[bot] in https://github.com/TappNetwork/filament-country-code-field/pull/41
+* Drop PHP 8.2, add PHP 8.5 support by @swilla in https://github.com/TappNetwork/filament-country-code-field/pull/43
+
+### New Contributors
+
+* @swilla made their first contribution in https://github.com/TappNetwork/filament-country-code-field/pull/43
+
+**Full Changelog**: https://github.com/TappNetwork/filament-country-code-field/compare/v2.0.2...v2.1.0
+
 ## v2.0.2 - 2026-01-22
 
 ### What's Changed

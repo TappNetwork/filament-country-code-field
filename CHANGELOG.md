@@ -2,6 +2,19 @@
 
 All notable changes to the "Filament Country Code Field" will be documented in this file.
 
+## v2.1.1 - 2026-05-15
+
+### What's Changed
+
+* Fix path for countrycode.css registration by @sergioraldana in https://github.com/TappNetwork/filament-country-code-field/pull/37
+* Bump dependabot/fetch-metadata from 2.5.0 to 3.1.0 by @dependabot[bot] in https://github.com/TappNetwork/filament-country-code-field/pull/42
+
+### New Contributors
+
+* @sergioraldana made their first contribution in https://github.com/TappNetwork/filament-country-code-field/pull/37
+
+**Full Changelog**: https://github.com/TappNetwork/filament-country-code-field/compare/v2.1.0...v2.1.1
+
 ## v2.1.0 - 2026-04-26
 
 ### What's Changed

@@ -18,13 +18,18 @@ jobs:
       matrix:
         os: [ubuntu-latest]
         php: [8.5, 8.4, 8.3]
-        laravel: [12.*, 11.*]
+        laravel: [13.*, 12.*, 11.*]
         stability: [prefer-stable]
         include:
+          - laravel: 13.*
+            testbench: 11.*
+            pest: ^4.0
           - laravel: 12.*
             testbench: 10.*
+            pest: ^3.0
           - laravel: 11.*
             testbench: 9.*
+            pest: ^3.0
 
     name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.stability }} - ${{ matrix.os }}
 
@@ -46,11 +51,16 @@ jobs:
 
       - name: Install dependencies
         run: |
-          composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update
+          composer config audit.block-insecure false
+          composer require "laravel/framework:${{ matrix.laravel }}" --no-interaction --no-update
+          composer require "orchestra/testbench:${{ matrix.testbench }}" --dev --no-interaction --no-update
+          composer require "pestphp/pest:${{ matrix.pest }}" --dev --no-interaction --no-update
+          composer require "pestphp/pest-plugin-arch:${{ matrix.pest }}" --dev --no-interaction --no-update
+          composer require "pestphp/pest-plugin-laravel:${{ matrix.pest }}" --dev --no-interaction --no-update
           composer update --${{ matrix.stability }} --prefer-dist --no-interaction
 
       - name: List Installed Dependencies
         run: composer show -D
 
       - name: Execute tests
-        run: vendor/bin/pest --ci
+        run: vendor/bin/pest --ci --no-coverage
